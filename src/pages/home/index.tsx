@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAPY } from '../../fixtures/dev-kit/hooks'
+import topImage from '../../img/image1.jpg'
 
 interface HomeProps {}
 
@@ -49,7 +50,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col items-end">
         <Link to="/room/t1">
-          <img src="/src/img/image1.jpg" className="object-fill rounded-xl" />
+          <img src={topImage} className="object-fill rounded-xl" />
         </Link>
         <div className="text-2xl">#SUSAINABILITY #TRADITION #ARTISANS #TOKYO</div>
       </div>
@@ -62,7 +63,19 @@ const StakerAPY = () => {
   return (
     <div className="mt-16 flex flex-col items-center">
       <div className="text-4xl">Staking APY</div>
-      <div className="text-4xl text-grey">{apy && apy.dp(1).toNumber() || '-' } %</div>
+      <div className="text-4xl text-grey">
+        {apy ? (
+          <div className="grid grid-cols-3 gap-2">
+            <div className="h-2 col-span-2 rounded-xl justif">{apy && apy.dp(1).toNumber()}</div>
+            <div>%</div>
+          </div>
+        ) : (
+          <div className="animate-pulse grid grid-cols-3 gap-2">
+            <div className="h-2 col-span-2 my-auto rounded-xl bg-grey"></div>
+            <div>%</div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
