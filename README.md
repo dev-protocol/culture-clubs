@@ -9,3 +9,8 @@ For local development please create a .env file using the dotenv file found in t
 VITE_L2_NETWORK=arbitrum-rinkeby
 VITE_INFURA_PROJECT_ID=
 ```
+
+```
+$ yarn
+$ yarn dev
+```
