@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAPY } from '../../fixtures/dev-kit/hooks'
+import topImage from '../../img/image1.jpg'
 
 interface HomeProps {}
 
@@ -49,7 +50,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col items-end">
         <Link to="/room/t1">
-          <img src="/src/img/image1.jpg" className="object-fill rounded-xl" />
+          <img src={topImage} className="object-fill rounded-xl" />
         </Link>
         <div className="text-2xl">#SUSAINABILITY #TRADITION #ARTISANS #TOKYO</div>
       </div>
