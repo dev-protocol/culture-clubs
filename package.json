@@ -6,6 +6,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix -c ./.eslintrc.json './src/**/*.{ts,tsx}'",
+    "lint:check": "eslint -c ./.eslintrc.json './src/**/*.{ts,tsx}'",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },
