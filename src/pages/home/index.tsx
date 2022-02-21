@@ -62,7 +62,19 @@ const StakerAPY = () => {
   return (
     <div className="mt-16 flex flex-col items-center">
       <div className="text-4xl">Staking APY</div>
-      <div className="text-4xl text-grey">{apy && apy.dp(1).toNumber() || '-' } %</div>
+      <div className="text-4xl text-grey">
+        {apy ? (
+          <div className="grid grid-cols-3 gap-2">
+            <div className="h-2 col-span-2 rounded-xl justif">{apy && apy.dp(1).toNumber()}</div>
+            <div>%</div>
+          </div>
+        ) : (
+          <div className="animate-pulse grid grid-cols-3 gap-2">
+            <div className="h-2 col-span-2 my-auto rounded-xl bg-grey"></div>
+            <div>%</div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
