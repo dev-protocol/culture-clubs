@@ -7,7 +7,7 @@ interface LauncherHeaderProps {}
 const Header: React.FC<LauncherHeaderProps> = ({ children }) => {
   return (
     <header className="mb-md flex h-24 flex-col justify-between py-sm sm:flex-row">
-      <div>
+      <div className="mb-lg">
         <Link className="grid grid-flow-col justify-start" to="/">
           <div>
             <img width="25px" height="auto" src={LogoImg} alt="Logo Image" />
