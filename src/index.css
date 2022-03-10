@@ -2,3 +2,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
+
+@font-face {
+  font-family: 'Glorify-Black';
+  src: url('https://devstaticasset.azureedge.net/font/GlorifyBlack.woff2') format('woff2'),
+    url('https://devstaticasset.azureedge.net/font/GlorifyBlack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Clever-Medium';
+  src: url('https://devstaticasset.azureedge.net/font/CleverMedium.woff2') format('woff2'),
+    url('https://devstaticasset.azureedge.net/font/CleverMedium.woff') format('woff');
+}
+
+@media (min-width: 1024px) {
+  .gcols2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .orderfirst {
+    order: -1;
+  }
+  .orderlast {
+    order: 9999;
+  }
+}
+
+.circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  line-height: 8px;
+}
