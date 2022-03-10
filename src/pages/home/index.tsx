@@ -61,18 +61,10 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 gcols2 gap-2 mx-8">
       <div className="flex flex-col items-start justify-start order-last orderfirst">
-        <div className="text-xl">
-          Get a premium membership NFT and join a club
-        </div>
-        <div className="text-lg mt-8">
-          Dropping
-        </div>
-        <div className="text-3xl md:text-base font-accent">
-          4.22
-        </div>
-        <div>
-          Purchase with
-        </div>
+        <div className="text-xl">Get a premium membership NFT and join a club</div>
+        <div className="text-lg mt-8">Dropping</div>
+        <div className="text-3xl md:text-base font-accent">4.22</div>
+        <div>Purchase with</div>
         <div className="box-content h-32 w-80">
           <PurchaseInfo />
         </div>
