@@ -52,7 +52,7 @@ const MilestoneInfo = ({ className }: { className?: string }) => {
 
 const PurchaseInfo = () => {
   return (
-    <div className="grid grid-rows-2 gap-4 w-full">
+    <div className="grid w-full grid-rows-2 gap-4">
       <div className="flex justify-between gap-8">
         <img src={devTokenImage} width={50} height={50} />
         <img src={bitcoinImage} width={50} height={50} />
@@ -70,21 +70,21 @@ const PurchaseInfo = () => {
 
 const Hero = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-2 mx-8">
-      <div className="flex flex-col items-start justify-between order-last md:order-first gap-8">
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight">Get a premium membership NFT and join a club</h2>
+    <div className="mx-8 grid gap-2 md:grid-cols-2">
+      <div className="order-last flex flex-col items-start justify-between gap-8 md:order-first">
+        <h2 className="text-3xl font-bold leading-tight md:text-5xl">Get a premium membership NFT and join a club</h2>
         <section>
-          <h3 className="text-2xl md:text-4xl mb-4">Dropping</h3>
-          <p className="text-accent font-accent leading-none">4.22</p>
+          <h3 className="mb-4 text-2xl md:text-4xl">Dropping</h3>
+          <p className="font-accent text-accent leading-none">4.22</p>
         </section>
         <section>
-          <h3 className="text-xl md:text-3xl mb-4">Purchase with</h3>
+          <h3 className="mb-4 text-xl md:text-3xl">Purchase with</h3>
           <div className="box-content ">
             <PurchaseInfo />
           </div>
         </section>
       </div>
-      <div className="flex flex-col items-center order-first md:order-last">
+      <div className="order-first flex flex-col items-center md:order-last">
         <img src={Card} className="object-fill" />
       </div>
     </div>
@@ -102,7 +102,7 @@ const Home: React.FC<HomeProps> = () => {
         </a>
       </div>
       <aside>
-        <p className="text-xs text-center">
+        <p className="text-center text-xs">
           All emojis designed by{' '}
           <a href="https://openmoji.org/" target="_blank" rel="noopener noreferrer">
             OpenMoji

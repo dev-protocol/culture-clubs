@@ -7,7 +7,7 @@ interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="mt-lg relative">
+    <footer className="relative mt-lg">
       <hr className="my-lg h-1 rounded-full bg-black opacity-10" />
       <div className="py-md">
         <div className="flex justify-between">

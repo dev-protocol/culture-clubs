@@ -4,8 +4,8 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <div className="text-white bg-bg">
-      <div className="container mx-auto px-2 font-body bg-bg text-base">
+    <div className="bg-bg text-white">
+      <div className="container mx-auto bg-bg px-2 font-body text-base">
         <BrowserRouter>
           <Header />
           <main>
