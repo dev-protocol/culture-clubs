@@ -11,36 +11,40 @@ import twitterImage from '../../img/twitter.svg'
 
 interface HomeProps {}
 
+const Milestone: React.FC = ({ children }) => {
+  return <li className="flex gap-4 before:content-['❝']">{children}</li>
+}
+
 const MilestoneInfo = ({ className }: { className?: string }) => {
   return (
-    <div className={`grid justify-center ${className}`}>
-      <div className="grid grid-cols-milestone gap-1 my-2">
+    <div className={`grid justify-center gap-4 ${className}`}>
+      <div className="grid grid-cols-milestone gap-4">
         <div>Apr.</div>
-        <div>
-          <span className="circle" />
-        </div>
-        <div>Announce the first project</div>
+        <ul>
+          <Milestone>Announce the first project</Milestone>
+          <Milestone>Staking with ETH</Milestone>
+        </ul>
       </div>
-      <div className="grid grid-cols-milestone gap-1 my-2">
+      <div className="grid grid-cols-milestone gap-4">
         <div>Jun.</div>
-        <div>
-          <span className="circle" />
-        </div>
-        <div>Start unlocking perks</div>
+        <ul>
+          <Milestone>Start unlocking perks</Milestone>
+          <Milestone>Dynamic sTokens as a generative membership</Milestone>
+        </ul>
       </div>
-      <div className="grid grid-cols-milestone gap-1 my-2">
+      <div className="grid grid-cols-milestone gap-4">
         <div>Q3</div>
-        <div>
-          <span className="circle" />
-        </div>
-        <div>3 or more projects across multiple sectors</div>
+        <ul>
+          <Milestone>3 or more projects across multiple sectors</Milestone>
+          <Milestone>Integration with Niwa</Milestone>
+        </ul>
       </div>
-      <div className="grid grid-cols-milestone gap-1 my-2">
+      <div className="grid grid-cols-milestone gap-4">
         <div>Q4</div>
-        <div>
-          <span className="circle" />
-        </div>
-        <div>Expand the payment gateways</div>
+        <ul>
+          <Milestone>Expand the payment gateways</Milestone>
+          <Milestone>Renewal Stakes.social</Milestone>
+        </ul>
       </div>
     </div>
   )
@@ -89,15 +93,15 @@ const Hero = () => {
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-48">
       <Hero />
-      <MilestoneInfo className="mt-48" />
-      <div className="mx-auto my-48">
+      <MilestoneInfo className="text-xl md:text-2xl" />
+      <div className="mx-auto">
         <a href="https://twitter.com/devprtcl" target="_blank" rel="noopener noreferrer">
           <img src={twitterImage} width={50} height={50} />
         </a>
       </div>
-      <aside className="my-9">
+      <aside>
         <p className="text-xs text-center">
           All emojis designed by{' '}
           <a href="https://openmoji.org/" target="_blank" rel="noopener noreferrer">
