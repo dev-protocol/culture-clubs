@@ -1,5 +1,5 @@
 import React from 'react'
-import topImage from '../../img/top.svg'
+import Card from '../../img/Card.svg'
 import bitcoinImage from '../../img/token/bitcoin.svg'
 import ethereumImage from '../../img/token/ethereum.svg'
 import usdcImage from '../../img/token/usdc.svg'
@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col items-center order-first orderlast">
-        <img src={topImage} className="object-fill rounded-xl" />
+        <img src={Card} className="object-fill" />
       </div>
     </div>
   )
@@ -81,11 +81,23 @@ const Home: React.FC<HomeProps> = () => {
     <div className="flex flex-col">
       <Hero />
       <MilestoneInfo className="mt-48" />
-      <div className="mx-auto mt-48 mb-24">
+      <div className="mx-auto my-48">
         <a href="https://twitter.com/devprtcl" target="_blank" rel="noopener noreferrer">
           <img src={twitterImage} width={50} height={50} />
         </a>
       </div>
+      <aside className="my-9">
+        <p className="text-xs text-center">
+          All emojis designed by{' '}
+          <a href="https://openmoji.org/" target="_blank" rel="noopener noreferrer">
+            OpenMoji
+          </a>{' '}
+          – the open-source emoji and icon project. License:{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/#" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>
+        </p>
+      </aside>
     </div>
   )
 }

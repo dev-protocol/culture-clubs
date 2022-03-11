@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culture Clubs</title>
+    <meta property="og:title" content="Culture Clubs" />
+    <meta property="og:site_name" content="Culture Clubs" />
+    <meta property="og:description" content="Everything is Culture" />
+    <meta property="og:url" content="https://clubs.stakes.social" />
+    <meta property="og:image" content="https://asset.stakes.social/culture-clubs/og--culture-clubs.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@devprtcl" />
+    <meta name="twitter:creator" content="@devprtcl" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Culture Clubs" />
+    <meta name="twitter:description" content="Everything is Culture" />
+    <meta name="twitter:image" content="https://asset.stakes.social/culture-clubs/og--culture-clubs.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="57x57" href="//asset.stakes.social/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="//asset.stakes.social/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="//asset.stakes.social/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="//asset.stakes.social/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="//asset.stakes.social/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="//asset.stakes.social/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="//asset.stakes.social/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="//asset.stakes.social/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="//asset.stakes.social/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="//asset.stakes.social/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="//asset.stakes.social/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="//asset.stakes.social/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="//asset.stakes.social/favicon-16x16.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Culture Club</title>
-</head>
-
-<body>
-  <div id="root"></div>
-  <script>
-    window.global = window;
-  </script>
-  <script type="module">
-    import process from "process";
-    import { Buffer } from "buffer";
-    import EventEmitter from "events";
-
-    window.Buffer = Buffer;
-    window.process = process;
-    window.EventEmitter = EventEmitter;
-  </script>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
