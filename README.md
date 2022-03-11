@@ -1,4 +1,4 @@
-# cluture-clubs-teaser-buddhist-temple
+# culture-clubs
 
 ## Development
 
