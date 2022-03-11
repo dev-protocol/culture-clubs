@@ -42,13 +42,13 @@ const MilestoneInfo = ({ className }: { className?: string }) => {
 const PurchaseInfo = () => {
   return (
     <div className="grid grid-rows-2 gap-4 w-full">
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-8">
         <img src={devTokenImage} width={50} height={50} />
         <img src={bitcoinImage} width={50} height={50} />
         <img src={ethereumImage} width={50} height={50} />
         <img src={usdcImage} width={50} height={50} />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-8">
         <img src={visaCardImage} width={60} height={60} />
         <img src={masterCardImage} width={60} height={60} />
         <img src={americanExpressCardImage} width={60} height={60} />
@@ -59,21 +59,21 @@ const PurchaseInfo = () => {
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 gcols2 gap-2 mx-8">
-      <div className="flex flex-col items-start justify-between order-last orderfirst">
-        <h2 className="text-xl font-bold leading-tight">Get a premium membership NFT and join a club</h2>
+    <div className="grid md:grid-cols-2 gap-2 mx-8">
+      <div className="flex flex-col items-start justify-between order-last md:order-first gap-8">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight">Get a premium membership NFT and join a club</h2>
         <section>
-          <h3 className="text-lg">Dropping</h3>
-          <p className="text-3xl font-accent">4.22</p>
+          <h3 className="text-2xl md:text-4xl mb-4">Dropping</h3>
+          <p className="text-accent font-accent leading-none">4.22</p>
         </section>
         <section>
-          <h3>Purchase with</h3>
-          <div className="box-content h-32 w-80">
+          <h3 className="text-xl md:text-3xl mb-4">Purchase with</h3>
+          <div className="box-content ">
             <PurchaseInfo />
           </div>
         </section>
       </div>
-      <div className="flex flex-col items-center order-first orderlast">
+      <div className="flex flex-col items-center order-first md:order-last">
         <img src={Card} className="object-fill" />
       </div>
     </div>
