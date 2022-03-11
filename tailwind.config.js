@@ -35,7 +35,7 @@ module.exports = {
         xl: '4rem'
       },
       gridTemplateColumns: {
-        milestone: '44px 24px 230px'
+        milestone: '2rem 1rem 1fr'
       }
     }
   },

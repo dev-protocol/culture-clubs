@@ -13,27 +13,34 @@ interface HomeProps {}
 
 const MilestoneInfo = ({ className }: { className?: string }) => {
   return (
-    <div className={`flex flex-col text-sm items-center ${className}`}>
+    <div className={`grid justify-center ${className}`}>
       <div className="grid grid-cols-milestone gap-1 my-2">
         <div>Apr.</div>
         <div>
           <span className="circle" />
         </div>
-        <div>Announce first project</div>
+        <div>Announce the first project</div>
       </div>
       <div className="grid grid-cols-milestone gap-1 my-2">
-        <div>Jul.</div>
+        <div>Jun.</div>
         <div>
           <span className="circle" />
         </div>
-        <div>Start unlock perks</div>
+        <div>Start unlocking perks</div>
       </div>
       <div className="grid grid-cols-milestone gap-1 my-2">
         <div>Q3</div>
         <div>
           <span className="circle" />
         </div>
-        <div>Cultureverse is begin</div>
+        <div>3 or more projects across multiple sectors</div>
+      </div>
+      <div className="grid grid-cols-milestone gap-1 my-2">
+        <div>Q4</div>
+        <div>
+          <span className="circle" />
+        </div>
+        <div>Expand the payment gateways</div>
       </div>
     </div>
   )
