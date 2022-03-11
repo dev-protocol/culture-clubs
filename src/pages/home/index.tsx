@@ -60,14 +60,18 @@ const PurchaseInfo = () => {
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 gcols2 gap-2 mx-8">
-      <div className="flex flex-col items-start justify-start order-last orderfirst">
-        <div className="text-xl">Get a premium membership NFT and join a club</div>
-        <div className="text-lg mt-8">Dropping</div>
-        <div className="text-3xl md:text-base font-accent">4.22</div>
-        <div>Purchase with</div>
-        <div className="box-content h-32 w-80">
-          <PurchaseInfo />
-        </div>
+      <div className="flex flex-col items-start justify-between order-last orderfirst">
+        <h2 className="text-xl font-bold leading-tight">Get a premium membership NFT and join a club</h2>
+        <section>
+          <h3 className="text-lg">Dropping</h3>
+          <p className="text-3xl font-accent">4.22</p>
+        </section>
+        <section>
+          <h3>Purchase with</h3>
+          <div className="box-content h-32 w-80">
+            <PurchaseInfo />
+          </div>
+        </section>
       </div>
       <div className="flex flex-col items-center order-first orderlast">
         <img src={Card} className="object-fill" />
