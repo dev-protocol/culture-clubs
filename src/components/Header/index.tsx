@@ -10,7 +10,7 @@ const Header: React.FC<LauncherHeaderProps> = ({ children }) => {
       <div className="mb-lg mx-2">
         <Link className="grid grid-flow-col items-center justify-start" to="/">
           <img width="25px" height="auto" src={LogoImg} alt="Logo Image" />
-          <div className="font-logo px-2 items-center mt-1">Culture Clubs</div>
+          <div className="font-logo text-xl px-2 items-center mt-1">Culture Clubs</div>
         </Link>
       </div>
       <div className="flex items-center">{children}</div>
