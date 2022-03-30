@@ -1,13 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import Header from './components/Header'
+import Container from './components/Container'
 
 function App() {
   return (
-    <div className="bg-bg text-white">
-      <div className="container mx-auto bg-bg px-2 font-body text-base">
+    <div className="bg-bg">
+      <div className="bg-bg font-body text-base">
         <BrowserRouter>
-          <Header />
+          <Container>
+            <Header />
+          </Container>
           <main>
             <Routes>
               <Route path="/" element={<Home />} />

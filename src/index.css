@@ -9,22 +9,6 @@
     url('https://devstaticasset.azureedge.net/font/GlorifyBlack.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Clever-Medium';
-  src: url('https://devstaticasset.azureedge.net/font/CleverMedium.woff2') format('woff2'),
-    url('https://devstaticasset.azureedge.net/font/CleverMedium.woff') format('woff');
-}
-
-.circle {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-  text-align: center;
-  line-height: 8px;
-}
-
 body {
   font-size: 24px;
 }

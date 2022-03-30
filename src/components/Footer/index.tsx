@@ -1,47 +1,33 @@
 import React from 'react'
-import { FaDiscord, FaGithubSquare } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import FooterImg from '../../img/FOOTER_IMG_Powered by Dev Protocol.svg'
+import twitterImage from '../../img/twitter.svg'
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="relative mt-lg">
-      <hr className="my-lg h-1 rounded-full bg-black opacity-10" />
-      <div className="py-md">
-        <div className="flex justify-between">
-          <div className="grid justify-items-start gap-8">
-            <div className="grid gap-4"></div>
-            <ul className="grid grid-flow-col gap-4 text-sm text-gray-400">
-              <li>
-                {/* <a href="https://github.com/dev-protocol/niwa/blob/main/TERMS-AND-CONDITIONS.md">Terms and Conditions</a> */}
-                <Link to="/terms-and-conditions">Terms and Conditions</Link>
-              </li>
-              <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
-              </li>
-            </ul>
-            <ul className="grid grid-flow-col gap-4 text-sm">
-              <li>
-                <a className="align-center flex gap-1" href="https://github.com/dev-protocol/niwa">
-                  <FaGithubSquare size="1.2rem" /> GitHub
-                </a>
-              </li>
-              <li>
-                <a className="align-center flex gap-1" href="https://discord.gg/VwJp4KM">
-                  <FaDiscord size="1.2rem" /> Discord
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="grid justify-items-start gap-8">
-            <a href="https://devprotocol.xyz" target="_blank" rel="noreferrer">
-              <img width="100px" height="auto" src={FooterImg} alt="Footer Image" />
-            </a>
-          </div>
-        </div>
-      </div>
+    <footer>
+      <section className="grid justify-center justify-items-center gap-4 py-32">
+        <a href="https://twitter.com/devprtcl" target="_blank" rel="noopener noreferrer">
+          <img src={twitterImage} width={50} height={50} />
+        </a>
+        <p className="text-3xl font-bold">Everything is culture.</p>
+        <p className="mt-4 text-center font-mono">
+          Developed with 💌 in Japan
+          <br /> by FRAME00
+        </p>
+      </section>
+      <aside>
+        <p className="text-center text-xs">
+          All emojis designed by{' '}
+          <a href="https://openmoji.org/" target="_blank" rel="noopener noreferrer">
+            OpenMoji
+          </a>{' '}
+          – the open-source emoji and icon project. License:{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/#" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>
+        </p>
+      </aside>
     </footer>
   )
 }
