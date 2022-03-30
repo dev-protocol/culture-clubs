@@ -128,11 +128,13 @@ const Feature: React.FC<{
 }> = ({ className, title, image, content }) => {
   return (
     <div className={`p-8 uppercase md:p-16 ${className ?? ''}`}>
-      <h2 className="mb-8 text-4xl font-bold md:text-6xl">{title}</h2>
-      <div className="grid items-center justify-between gap-8 md:grid-cols-[22rem,auto] md:gap-16">
-        <img src={image} className="max-w-full" />
-        <div className="max-w-3xl">{content}</div>
-      </div>
+      <Container>
+        <h2 className="mb-8 text-4xl font-bold md:text-6xl">{title}</h2>
+        <div className="grid items-center justify-between gap-8 md:grid-cols-[22rem,auto] md:gap-16">
+          <img src={image} className="max-w-full" />
+          <div className="max-w-3xl">{content}</div>
+        </div>
+      </Container>
     </div>
   )
 }
