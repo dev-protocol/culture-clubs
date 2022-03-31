@@ -6,7 +6,6 @@ import devTokenImage from '../../img/token/devtoken.svg'
 import masterCardImage from '../../img/card/mastercard.svg'
 import americanExpressCardImage from '../../img/card/american-express.svg'
 import visaCardImage from '../../img/card/visa.svg'
-import twitterImage from '../../img/twitter.svg'
 import gl1 from '../../img/gl/gl-1.png'
 import gl2 from '../../img/gl/gl-2.png'
 import gl3 from '../../img/gl/gl-3.png'
@@ -219,9 +218,9 @@ const Home: React.FC<HomeProps> = () => {
         }
       />
       <Loop className="bg-orange text-6xl uppercase text-white">
-        <p className="mr-4 animate-[loopFront_20s_-10s_linear_infinite]">Do greater things than one together</p>
+        <p className="mr-4 animate-[loopFront_20s_-10s_linear_infinite]">Do greater things together</p>
         <p className="mr-4 animate-[loopBack_20s_linear_infinite]" role="presentation">
-          Do greater things than one together
+          Do greater things together
         </p>
       </Loop>
       <MilestoneInfo className="text-xl md:text-2xl" />
