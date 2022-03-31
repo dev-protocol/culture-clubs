@@ -68,15 +68,15 @@ const PurchaseInfo = () => {
   return (
     <div className="grid w-full grid-rows-2 gap-2 md:gap-4">
       <div className="flex justify-between gap-4">
-        <img src={visaCardImage} className="w-12 md:w-14" />
-        <img src={masterCardImage} className="w-12 md:w-14" />
+        <img src={visaCardImage} alt="VISA" className="w-12 md:w-14" />
+        <img src={masterCardImage} alt="MASTER" className="w-12 md:w-14" />
         <img src={americanExpressCardImage} className="w-12 md:w-14" />
       </div>
       <div className="flex justify-between gap-4">
-        <img src={devTokenImage} className="w-11 md:w-12" />
-        <img src={bitcoinImage} className="w-11 md:w-12" />
-        <img src={ethereumImage} className="w-11 md:w-12" />
-        <img src={usdcImage} className="w-11 md:w-12" />
+        <img src={devTokenImage} alt="DEV" className="w-11 md:w-12" />
+        <img src={bitcoinImage} alt="BTC" className="w-11 md:w-12" />
+        <img src={ethereumImage} alt="ETH" className="w-11 md:w-12" />
+        <img src={usdcImage} alt="USDC" className="w-11 md:w-12" />
       </div>
     </div>
   )
@@ -85,9 +85,10 @@ const PurchaseInfo = () => {
 const GalleryItems = ({ className }: { className: string }) => {
   return (
     <div
-      className={`mr-16 grid h-80 grid-cols-[repeat(14,13rem)] content-center items-center justify-start gap-16 ${
+      className={`min-h-64 md:min-h-80 mr-16 grid grid-cols-[repeat(14,11rem)] content-center items-center justify-start gap-8 md:grid-cols-[repeat(14,13rem)] md:gap-16 ${
         className ?? ''
       }`}
+      role="presentation"
     >
       <img src={gl1} />
       <img src={gl2} />
@@ -108,14 +109,14 @@ const GalleryItems = ({ className }: { className: string }) => {
 }
 
 const Loop: React.FC<{ className?: string }> = ({ children, className }) => {
-  return <div className={`flex max-w-full overflow-x-clip whitespace-nowrap ${className ?? ''}`}>{children}</div>
+  return <div className={`flex max-w-full overflow-x-hidden whitespace-nowrap ${className ?? ''}`}>{children}</div>
 }
 
 const Gallery = () => {
   return (
-    <Loop className="bg-white py-16">
-      <GalleryItems className="animate-[loopFront_180s_-90s_linear_infinite]" />
-      <GalleryItems className="animate-[loopBack_180s_linear_infinite]" />
+    <Loop className="bg-white py-8 md:py-16">
+      <GalleryItems className="animate-[loopFront_180s_-90s_linear_infinite] md:animate-[loopFront_180s_-90s_linear_infinite]" />
+      <GalleryItems className="animate-[loopBack_180s_linear_infinite] md:animate-[loopBack_180s_linear_infinite]" />
     </Loop>
   )
 }
@@ -172,7 +173,9 @@ const Home: React.FC<HomeProps> = () => {
       <Hero />
       <Loop className="bg-orange text-6xl uppercase text-white">
         <p className="mr-4 animate-[loopFront_20s_-10s_linear_infinite]">Do more than you imagine on Culture Clubs</p>
-        <p className="mr-4 animate-[loopBack_20s_linear_infinite]">Do more than you imagine on Culture Clubs</p>
+        <p className="mr-4 animate-[loopBack_20s_linear_infinite]" role="presentation">
+          Do more than you imagine on Culture Clubs
+        </p>
       </Loop>
       <Feature
         className="bg-[#E1C6D8]"
@@ -217,7 +220,9 @@ const Home: React.FC<HomeProps> = () => {
       />
       <Loop className="bg-orange text-6xl uppercase text-white">
         <p className="mr-4 animate-[loopFront_20s_-10s_linear_infinite]">Do greater things than one together</p>
-        <p className="mr-4 animate-[loopBack_20s_linear_infinite]">Do greater things than one together</p>
+        <p className="mr-4 animate-[loopBack_20s_linear_infinite]" role="presentation">
+          Do greater things than one together
+        </p>
       </Loop>
       <MilestoneInfo className="text-xl md:text-2xl" />
       <Footer />
