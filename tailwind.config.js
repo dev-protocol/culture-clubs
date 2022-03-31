@@ -6,27 +6,15 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ['Syne', 'sans-serif'],
-        accent: ['Clever-Medium', 'sans-serif'],
         logo: ['Glorify-Black', 'sans-serif']
-      },
-      // fontSize: {
-      //   xs: '12px',
-      //   sm: '18px',
-      //   base: '24px',
-      //   lg: '36px',
-      //   xl: '48px',
-      //   '2xl': '60px',
-      //   '3xl': '144px'
-      // },
-      fontSize: {
-        accent: '144px'
       },
       colors: {
         link: '#AFA391',
         grey: '#BDBDBD',
         silver: '#91A1AF',
         gold: '#AFA391',
-        bg: '#FFC09C'
+        bg: '#FFDBD0',
+        orange: '#FE8761'
       },
       spacing: {
         sm: '1rem',
@@ -34,8 +22,23 @@ module.exports = {
         lg: '3rem',
         xl: '4rem'
       },
-      gridTemplateColumns: {
-        milestone: '3rem 1fr'
+      keyframes: {
+        loopFront: {
+          '0%': {
+            transform: 'translateX(100%)'
+          },
+          to: {
+            transform: 'translateX(-100%)'
+          }
+        },
+        loopBack: {
+          '0%': {
+            transform: 'translateX(0)'
+          },
+          to: {
+            transform: 'translateX(-200%)'
+          }
+        }
       }
     }
   },
