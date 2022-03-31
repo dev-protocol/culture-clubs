@@ -13,7 +13,10 @@ const Footer: React.FC<FooterProps> = () => {
         <p className="text-3xl font-bold">Everything is culture.</p>
         <p className="mt-4 text-center font-mono">
           Developed with 💌 in Japan
-          <br /> by FRAME00
+          <br /> by{' '}
+          <a href="https://corp.frame00.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            FRAME00
+          </a>
         </p>
       </section>
       <aside>
