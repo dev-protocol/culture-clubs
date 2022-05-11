@@ -57,7 +57,7 @@
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "typescript": "^4.4.4",
-    "vite": "^2.7.2",
+    "vite": "2.9.9",
     "vitest": "^0.0.142"
   },
   "exports": {
